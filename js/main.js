@@ -1,5 +1,5 @@
 var gameData = {
-	playerName: Davaac
+	playerName: "Davaac"
 }
 
 function tut1advance() {
