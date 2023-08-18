@@ -39,5 +39,17 @@
   <div class="tutorial" id="tut2" hidden=true>
     <p>Great, I'll call you <span id="tut2name"></span></p>
   </div>
+  <script>
+  var gameData = {
+	playerName: null
+}
+
+function tut1advance() {
+	gameData.playerName = document.getElementById("playerName").value;
+	getElementById("tut2name").innerHTML = gameData.playerName.value;
+	document.getElementById("tut1").hidden = true;
+	document.getElementById("tut2").hidden = false;
+}
+  </script>
 </body>
 </html>
