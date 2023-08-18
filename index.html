@@ -21,6 +21,7 @@
   .tutorial {
   	background-color: GhostWhite;
   	color: CornflowerBlue;
+  	text-align: center;
   }
   </style>
 </head>
@@ -28,16 +29,15 @@
 <body>
   <!-- Content -->
   <div class="tutorial" id="tut1">
-  <h1 title="You open your eyes and see nothing but a uniform white light. A nebulous voice speaks to you:"> Good morning! Do you remember what your name is? </h1>
-  <form onsubmit="updateplayerName()">
-    <label for="playerName">My name is:</label><br>
-    <input type="text" id="playerName" name="playerName"><br>
-    <input type="submit" value="Submit">
-  </form>
-  <p>Great, I'll call you <span id="tut1name"></span></p>
-  <script>
-    document.getElementById("tut1name").innerHTTP = gameData.playerName.value
-  </script>
+    <h1 title="You open your eyes and see nothing but a uniform white light. A nebulous voice speaks to you:"> Good morning! Do you remember what your name is? </h1>
+    <form onsubmit="tut1advance()">
+      <label for="playerName">My name is:</label><br>
+      <input type="text" id="playerName" name="playerName"><br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  <div class="tutorial" id="tut2" hidden=true>
+    <p>Great, I'll call you <span id="tut2name"></span></p>
   </div>
 </body>
 </html>

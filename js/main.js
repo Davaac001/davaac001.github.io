@@ -2,6 +2,9 @@ var gameData = {
 	playerName: null
 }
 
-function updateplayerName() {
-	gameData.playerName = document.getElementById("playerName").value
+function tut1advance() {
+	gameData.playerName = document.getElementById("playerName").value;
+	getElementById("tut2name").innerHTML = gameData.playerName.value;
+	document.getElementById("tut1").hidden = true;
+	document.getElementById("tut2").hidden = false;
 }
