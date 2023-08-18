@@ -1,5 +1,6 @@
-var gameData = {
-	playerName: "Davaac"
+const gameData = {
+	playerName:
+	finishedTut: false
 }
 
 function tut1advance() {
